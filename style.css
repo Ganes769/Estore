@@ -141,7 +141,6 @@ html {
 }
 
 .bar {
-  /* background-color: red; */
   height: 70px;
   width: 100%;
 }
@@ -151,7 +150,7 @@ html {
   justify-content: space-between;
   align-items: center;
   height: 80px;
-  background-color: white;
+  /* background-color: white; */
 
   width: 70%;
   margin: auto;
@@ -437,4 +436,30 @@ input:focus {
   padding: 12px 24px;
   border-radius: 25px;
   font-weight: bold;
+}
+.latest-prooducts {
+  margin: 0px auto;
+  height: 100vh;
+  width: 100%;
+}
+.latest-prooducts h2 {
+  margin-top: 8px;
+}
+.tab-items {
+  width: 50%;
+  margin: 0px auto;
+  margin-bottom: 60px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  background-color: white;
+  border-bottom: 1px solid rgb(172, 142, 151);
+}
+.tab-items ul li {
+  margin: 0px 6px;
+  color: rgb(172, 142, 151);
+  list-style-type: none;
+}
+.tab-items ul {
+  display: flex;
 }
