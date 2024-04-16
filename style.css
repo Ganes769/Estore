@@ -509,7 +509,7 @@ input:focus {
   height: 380px;
   background-color: rgb(223, 240, 254);
 }
-.hero-text {
+.heros-text {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
