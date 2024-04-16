@@ -138,6 +138,13 @@ html {
   .bar {
     display: none;
   }
+  .tab-items {
+    justify-content: start;
+    gap: 8px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .bar {
@@ -446,7 +453,7 @@ input:focus {
   margin-top: 8px;
 }
 .tab-items {
-  width: 50%;
+  width: 60%;
   margin: 0px auto;
   margin-bottom: 60px;
   justify-content: space-between;
@@ -462,4 +469,42 @@ input:focus {
 }
 .tab-items ul {
   display: flex;
+}
+
+.grid-container {
+  width: 60%;
+  margin: 0px auto;
+}
+
+.grid-item {
+  padding: 20px;
+  text-align: center;
+}
+
+@media screen and (min-width: 900px) {
+  .grid-container {
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* One column */
+    grid-template-rows: repeat(2, auto); /* Two rows */
+    /* Gap between grid items */
+  }
+  .grid-item img {
+    height: 300px;
+    width: 300px;
+  }
+}
+@media (min-width: 768px) and (max-width: 900px) {
+  .grid-container {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* One column */
+    /* Two rows */
+  }
+  .grid-item {
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+  }
 }
